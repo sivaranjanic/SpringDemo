@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-@RestController   // = @Controller + @ResponseBody
+@RestController  // = @Controller + @ResponseBody
 public class DBController {
 
 	@Autowired
@@ -34,7 +34,7 @@ public class DBController {
 //		
 //	}
 	
-	@RequestMapping ("/")
+	@RequestMapping ("/home")
 	public ModelAndView home(Application app) {
 		System.out.println("in home");
 		ModelAndView mv = new ModelAndView();  
